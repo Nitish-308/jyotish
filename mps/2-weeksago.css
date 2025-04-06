@@ -1,0 +1,94 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    color: #e0e0e0;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+  .contributions-header {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid #00ffff;
+  }
+  
+  .contributions-header h1 {
+    font-size: 2.5rem;
+    color: #00ffff;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+  }
+  
+  .contributions-header p {
+    font-size: 1.2rem;
+    color: #b0b0b0;
+  }
+  
+  /* Contributions Section */
+  .contributions-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .contribution-card {
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff00ff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px #ff00ff, 0 0 30px #ff00ff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contribution-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff;
+  }
+  
+  .contribution-title {
+    font-size: 1.8rem;
+    color: #ff00ff;
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff;
+    margin-bottom: 10px;
+  }
+  
+  .contribution-description {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin-bottom: 15px;
+  }
+  
+  .contribution-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: #e0e0e0;
+  }
+  
+  .contribution-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .contribution-meta i {
+    color: #00ffff;
+  }
+  
+  /* Footer */
+  .contributions-footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9);
+    border-top: 2px solid #00ffff;
+  }
+  
+  .contributions-footer p {
+    font-size: 1rem;
+    color: #b0b0b0;
+  }

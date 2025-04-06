@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h2 {
+    margin: 0;
+  }
+  
+  /* Discussions Section */
+  #discussions {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Forum Header */
+  .forum-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .forum-header h2 {
+    font-size: 24px;
+    color: #2c3e50;
+  }
+  
+  .search-bar {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .search-bar input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .search-btn, .new-topic-btn {
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .search-btn:hover, .new-topic-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  /* Topic List */
+  .topic-list {
+    margin-top: 20px;
+  }
+  
+  .topic-card {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #ecf0f1;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .topic-meta {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+  }
+  
+  .topic-title {
+    font-size: 18px;
+    color: #2c3e50;
+    margin: 5px 0;
+  }
+  
+  .topic-preview {
+    font-size: 14px;
+    color: #34495e;
+  }
+  
+  .topic-tags {
+    margin-top: 10px;
+  }
+  
+  .topic-tags .tag {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 5px;
+    background: #3498db;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  /* Topic Actions */
+  .topic-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .reply-btn, .like-btn, .tool-btn {
+    padding: 6px 10px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .reply-btn:hover, .like-btn:hover, .tool-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  .like-btn {
+    background-color: #27ae60;
+  }
+  
+  .like-btn:hover {
+    background-color: #1e8449;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .forum-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .search-bar {
+      width: 100%;
+    }
+  
+    .topic-card {
+      padding: 10px;
+    }
+  
+    .topic-title {
+      font-size: 16px;
+    }
+  
+    .topic-preview {
+      font-size: 12px;
+    }
+  }

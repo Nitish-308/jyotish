@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="vibrant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeonPulse | Member Profile</title>
+  <link rel="stylesheet" href="mps/Mps.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Mood Selector (Consistent with index) -->
+  <div class="mood-selector">
+    <button class="mood-btn vibrant active" data-theme="vibrant" title="Energetic mode">
+      <i class="fas fa-bolt"></i>
+    </button>
+    <button class="mood-btn calm" data-theme="calm" title="Relaxed mode">
+      <i class="fas fa-spa"></i>
+    </button>
+    <button class="mood-btn dark" data-theme="dark" title="Night mode">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+
+  <!-- Floating Back Button -->
+  <a href="index.html" class="back-button floating">
+    <i class="fas fa-arrow-left"></i> Back to Community
+  </a>
+
+  <!-- Enhanced Member Profile -->
+  <section class="member-profile">
+
+
+    <!-- Profile Header with Parallax Background -->
+    <div class="profile-header parallax-bg">
+      <div class="profile-overlay"></div>
+      <div class="profile-content">
+
+
+        <!-- Avatar with Hover Effect -->
+        <div class="avatar-container">
+          <img src="" alt="Member Avatar" class="profile-avatar">
+          <div class="avatar-hover">
+            <i class="fas fa-camera"></i>
+            <span>Update Photo</span>
+          </div>
+        </div>
+        
+        <!-- Profile Info with Animated Elements -->
+        <div class="profile-info">
+          <h1 class="profile-name">Jane <span class="name-highlight">Doe</span></h1>
+          <p class="member-since">
+            <i class="fas fa-calendar-alt pulse-icon"></i> Member since January 2023
+          </p>
+          
+          <!-- Badges with Interactive Tooltips -->
+          <div class="member-badges">
+            <div class="badge-container">
+              <span class="badge active-member glow">
+                <i class="fas fa-fire"></i> Active Member
+              </span>
+              <div class="tooltip">Consistently engaged for 6+ months</div>
+            </div>
+            
+            <div class="badge-container">
+              <span class="badge event-organizer glow">
+                <i class="fas fa-calendar-star"></i> Event Organizer
+              </span>
+              <div class="tooltip">Hosted 3 community events</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Profile Details with Tab Navigation -->
+    <div class="profile-details-container">
+
+      <!-- Tab Navigation -->
+      <nav class="profile-tabs">
+        <button class="tab-button active" data-tab="about">
+          <i class="fas fa-user"></i> About
+        </button>
+        <button class="tab-button" data-tab="activity">
+          <i class="fas fa-chart-line"></i> Activity
+        </button>
+        <button class="tab-button" data-tab="contributions">
+          <i class="fas fa-pencil-alt"></i> Contributions
+        </button>
+        <button class="tab-button" data-tab="connections">
+          <i class="fas fa-users"></i> Connections
+        </button>
+      </nav>
+      
+      <!-- Tab Content -->
+      <div class="tab-content active" id="about-tab">
+        <div class="detail-card glass">
+          <h3><i class="fas fa-info-circle"></i> Bio</h3>
+          <p class="profile-bio">Web developer passionate about community building. Based in Portland, OR. Specializing in creating engaging digital experiences that bring people together.</p>
+          
+          <div class="detail-grid">
+            <div class="detail-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Portland, OR</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-briefcase"></i>
+              <span>Senior Web Developer</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-heart"></i>
+              <span>Community Building, UX Design</span>
+            </div>
+            <div class="detail-item">
+              <i class="fas fa-envelope"></i>
+              <span>jane.doe@example.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Activity Tab Content -->
+      <div class="tab-content" id="activity-tab">
+        <div class="detail-card glass">
+          <h3><i class="fas fa-chart-pie"></i> Engagement Stats</h3>
+          <div class="activity-stats">
+            <div class="stat-circle">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+              </svg>
+              <div class="stat-content">
+                <span class="stat-number">42</span>
+                <span class="stat-label">Topics</span>
+              </div>
+            </div>
+            
+            <div class="stat-circle">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+              </svg>
+              <div class="stat-content">
+                <span class="stat-number">128</span>
+                <span class="stat-label">Replies</span>
+              </div>
+            </div>
+            
+            <div class="stat-circle">
+              <svg class="progress-ring" width="120" height="120">
+                <circle class="progress-ring-circle" stroke-width="8" fill="transparent" r="52" cx="60" cy="60"/>
+              </svg>
+              <div class="stat-content">
+                <span class="stat-number">3</span>
+                <span class="stat-label">Events</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Recent Activity Timeline -->
+          <div class="activity-timeline">
+            <h4><i class="fas fa-history"></i> Recent Activity</h4>
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-content">
+                <p>Posted in <a href="#">Community Guidelines Discussion</a></p>
+                <span class="timeline-date">2 hours ago</span>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-badge"></div>
+              <div class="timeline-content">
+                <p>Reacted to <a href="#">New Event Proposal</a></p>
+                <span class="timeline-date">1 day ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contributions Tab Content -->
+      <div class="tab-content" id="contributions-tab">
+        <div class="detail-card glass">
+          <h3><i class="fas fa-star"></i> Top Contributions</h3>
+          <ul class="contribution-list">
+            <li class="contribution-item">
+              <a href="#" class="contribution-link">
+                <span class="contribution-title">Best practices for community moderation</span>
+                <span class="contribution-meta">
+                  <span class="contribution-date">2 days ago</span>
+                  <span class="contribution-stats">
+                    <i class="fas fa-heart"></i> 24
+                    <i class="fas fa-comment"></i> 8
+                  </span>
+                </span>
+              </a>
+            </li>
+            <li class="contribution-item">
+              <a href="#" class="contribution-link">
+                <span class="contribution-title">Event planning committee notes</span>
+                <span class="contribution-meta">
+                  <span class="contribution-date">1 week ago</span>
+                  <span class="contribution-stats">
+                    <i class="fas fa-heart"></i> 18
+                    <i class="fas fa-comment"></i> 5
+                  </span>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Connections Tab Content -->
+      <div class="tab-content" id="connections-tab">
+        <div class="detail-card glass">
+          <h3><i class="fas fa-network-wired"></i> Community Network</h3>
+          <div class="connection-grid">
+            <div class="connection-card">
+              <img src="../images/user1.jpg" alt="Connection" class="connection-avatar">
+              <h4>Alex Chen</h4>
+              <p>UX Designer</p>
+              <button class="connection-button">
+                <i class="fas fa-comment-dots"></i> Message
+              </button>
+            </div>
+            <div class="connection-card">
+              <img src="../images/user2.jpg" alt="Connection" class="connection-avatar">
+              <h4>Maria Garcia</h4>
+              <p>Frontend Dev</p>
+              <button class="connection-button">
+                <i class="fas fa-comment-dots"></i> Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Floating Action Button -->
+    <div class="fab-container">
+      <button class="fab-button pulse">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+      <div class="fab-options">
+        <button class="fab-option"><i class="fas fa-envelope"></i></button>
+        <button class="fab-option"><i class="fas fa-user-plus"></i></button>
+        <button class="fab-option"><i class="fas fa-flag"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <script src="../js/mood-interactivity.js"></script>
+  <script src="../js/profile-interactivity.js"></script>
+</body>
+</html>

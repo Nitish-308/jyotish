@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    color: #2c3e50;
+  }
+  
+  section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Events Section */
+  .events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .event-filters select {
+    padding: 8px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .events-calendar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .calendar-view, .event-list {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .event-card {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+    background: #ecf0f1;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .event-date {
+    text-align: center;
+    font-size: 18px;
+    color: #2c3e50;
+  }
+  
+  .event-date .date-day {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .event-date .date-month {
+    text-transform: uppercase;
+  }
+  
+  .event-details h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+    color: #2c3e50;
+  }
+  
+  .event-details p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #34495e;
+  }
+  
+  .event-actions button {
+    padding: 8px 12px;
+    margin-right: 10px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .event-actions button:hover {
+    background-color: #2980b9;
+  }
+  
+  /* To-Do List Section */
+  .to-do-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .to-do-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .to-do-list input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .add-task-btn {
+    padding: 8px 12px;
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .add-task-btn:hover {
+    background-color: #1e8449;
+  }
+  
+  /* Dream Tracker Section */
+  textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+  }
+  
+  .save-dream-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #8e44ad;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .save-dream-btn:hover {
+    background-color: #732d91;
+  }
+  
+  /* Scheduled Work Section */
+  .work-schedule p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #34495e;
+  }
+  
+  /* Next Steps Section */
+  ol {
+    padding-left: 20px;
+  }
+  
+  ol li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #34495e;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .events-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .events-calendar {
+      flex-direction: column;
+    }
+  
+    .event-card {
+      flex-direction: column;
+    }
+  }
