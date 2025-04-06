@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="vibrant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeonPulse Community</title>
+  <link rel="stylesheet" href="css/mood-style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  
+  
+  <!-- Mood Selector -->
+  <div class="mood-selector">
+    <button class="mood-btn vibrant active" data-theme="vibrant" title="Energetic mode">
+      <i class="fas fa-bolt"></i>
+    </button>
+    <button class="mood-btn calm" data-theme="calm" title="Relaxed mode">
+      <i class="fas fa-spa"></i>
+    </button>
+    <button class="mood-btn dark" data-theme="dark" title="Night mode">
+      <i class="fas fa-moon"></i>
+    
+  <!-- <button class="mood-btn fa-chart-pie" data-theme="calm" title="Calendar">
+  <i class="fas fa-calendar-star"></i>
+  </button>
+
+
+    <button class="mood-btn Action " data-theme="contribution-date" title="Normal calendar">
+      <i class="fas fa-book-open"></i>
+    </button>
+
+    <button class="mood-btn vibrant Interactive" data-theme="vibrant" title="Energetic mode">
+      <i class="fas fa-bolt"></i>
+    </button>
+
+    <button class="mood-btn calendar" data-theme="calm" title="Calendar">
+      <i class="fas fa-calendar-star"></i>
+    </button> -->
+
+
+    <script>
+      // Select all mood buttons
+      const moodButtons = document.querySelectorAll('.mood-btn');
+      
+      // Add click event listener to each button
+      moodButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Get the theme from the clicked button
+          const selectedTheme = button.getAttribute('data-theme');
+      
+          // Update the data-theme attribute of the <html> element
+          document.documentElement.setAttribute('data-theme', selectedTheme);
+      
+          // Remove 'active' class from all buttons
+          moodButtons.forEach(btn => btn.classList.remove('active'));
+      
+          // Add 'active' class to the clicked button
+          button.classList.add('active');
+        });
+      });
+      </script>
+
+  </div>
+
+ 
+
+  <!-- Animated Hero Section -->
+  <section class="hero">
+    <div class="particles" id="particles-js"></div>
+    <div class="hero-content">
+      <h1 class="title-animate">Welcome to <span class="community-name">NeonPulse</span></h1>
+      <p class="tagline floating">Connecting creative developers since 2023</p>
+      <div class="cta-buttons">
+        <a href="#join" class="btn-primary pulse">Join Now</a>
+        <a href="#about" class="btn-secondary glow">Learn More</a>
+      </div>
+    </div>
+    <div class="scroll-indicator bounce">
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- Animated Navigation -->
+  <nav class="floating-nav">
+    <ul>
+      <li><a href="CommunityResources.html" class="nav-link"><i class="fas fa-book-open"></i> Resources</a></li>
+      <li><a href="Community.html" class="nav-link"><i class="fas fa-calendar-star"></i> Events</a></li>
+      <li><a href="MembersProfileSys.html" class="nav-link"><i class="fas fa-users"></i> Members</a></li>
+      <li><a href="eventsManagement.html" class="nav-link"><i class="fas fa-comments"></i> Discussions</a></li>
+      <li><a href="../blog1/techblog.html" class="nav-link"><i class="fas fa-code"></i> Tech Blog</a></li>
+      <li><a href="Mps.html" class="nav-link"><i class="fas fa-code"></i> MPS </a></li>
+    </ul>
+  </nav>
+
+  <!-- Animated Value Propositions -->
+  <section class="value-prop">
+    <div class="prop-card slide-in" style="--delay: 0.2s">
+      <div class="icon-circle">
+        <i class="fas fa-users"></i>
+      </div>
+      <h3>500+ Members</h3>
+      <p>Connect with like-minded individuals</p>
+      <div class="pulse-dots"></div>
+    </div>
+    <div class="prop-card slide-in" style="--delay: 0.4s">
+      <div class="icon-circle">
+        <i class="fas fa-calendar-check"></i>
+      </div>
+      <h3>Monthly Events</h3>
+      <p>Learn and grow together</p>
+      <div class="pulse-dots"></div>
+    </div>
+    <div class="prop-card slide-in" style="--delay: 0.6s">
+      <div class="icon-circle">
+        <i class="fas fa-comment-dots"></i>
+      </div>
+      <h3>Active Discussions</h3>
+      <p>Share knowledge and get help</p>
+      <div class="pulse-dots"></div>
+    </div>
+  </section>
+
+  <!-- <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/mood-interactivity.js"></script> -->
+</body>
+</html>
